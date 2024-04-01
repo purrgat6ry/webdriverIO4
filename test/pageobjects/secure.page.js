@@ -33,10 +33,7 @@ class SecurePage extends Page {
         expect(calculatorTitle).toEqual("Cloud Pricing Calculator");
     }
 
-    async totalEstimate() {
-        const calculatorTitle = await browser.getTitle();
-        expect(calculatorTitle).toEqual("Cloud Pricing Calculator");
-    }
+
 }
 
 export default new SecurePage();

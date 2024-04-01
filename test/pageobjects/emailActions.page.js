@@ -33,7 +33,7 @@ class emailActions extends Page {
         await browser.switchToWindow(handles[1]);
         await browser.refresh();
 
-        const secondEstimate = await $("#mobilepadding > td > h2").getText();
+        const secondEstimate = await $("tbody tr td:nth-child(2) h3:nth-child(1)").getText();
         const secondExtractValue = this.valueExtract(secondEstimate);
         expect(firstExtractValue).toEqual(secondExtractValue); 
     }
